@@ -8,7 +8,7 @@ class My404component extends Component{
     render(){
         return(
             <div>
-                Kuch ni mila bc
+                Sorry nothing here :/
             </div>
         )
     }
