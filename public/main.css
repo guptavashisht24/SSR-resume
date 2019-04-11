@@ -1,5 +1,4 @@
 .menu{
-    background-color: #1f1e1e;
     display: flex;
     padding: 16px;
     font-family: sans-serif;
@@ -8,21 +7,26 @@
     position: absolute;
     width: 100%;
     box-sizing: border-box;
+    z-index:1;
 }
-.bg-img{
-    background-image: url("menu_background.jpg");
-    min-height: 600px;
-
-    /* Center and scale the image nicely */
-
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    /* Needed to position the navbar */
+.flx{
+    display: flex;
+}
+.centered{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.main{
+    min-height: 400px;
     position: relative;
+    background-color : #63d488;
 }
 .wM_toggle{
     display: none;
+}
+.profile{
+    border-radius: 50%;
 }
 @media only screen and (max-width: 768px) {
     .menu,
@@ -56,4 +60,52 @@
 }
 .right_nav{
     margin-left: auto;
+}
+.w30{
+    width: 40%;
+}
+.ma{
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    position: absolute;
+    width:50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+.w100{
+    width: 80%;
+}
+.fww{
+    font-weight: 100;
+    color: white;
+}
+.fs28{
+    font-size: 32px;
+}
+.mt200{
+    margin-top: 100px;
+}
+
+.ma{
+    margin-left: auto;
+    margin-right: auto;
+}
+.fs22{
+    font-size: 22px;
+}
+.ff{
+    font-family: "Maison Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.dib{
+    display: inline-block;
 }

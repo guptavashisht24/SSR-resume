@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Menu from './Menu';
+import Main from './Main';
+
 class Home extends Component{
     constructor(props){
         super(props);
@@ -9,7 +11,7 @@ class Home extends Component{
         return(
             <div>
                 <Menu />
-
+                <Main />
             </div>
         )
     }

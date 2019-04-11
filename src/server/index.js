@@ -18,7 +18,7 @@ app.get('*',(req,res,next)=>{
         );
 
     res.status(200).send(`<html><!DOCTYPE html><head>
-        <title>SSR with RR</title>
+        <title>Vashisht</title>
   <script src="/bundle.js" defer></script>
   <link href="/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css" rel="stylesheet">
