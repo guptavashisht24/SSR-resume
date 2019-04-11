@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Menu from './Menu';
 class Home extends Component{
     constructor(props){
         super(props);
@@ -7,8 +8,8 @@ class Home extends Component{
     render(){
         return(
             <div>
-                Hi Home
-                <Link to="/routing/javascript">Grid</Link>
+                <Menu />
+
             </div>
         )
     }

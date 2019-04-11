@@ -1,0 +1,59 @@
+.menu{
+    background-color: #1f1e1e;
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.bg-img{
+    background-image: url("menu_background.jpg");
+    min-height: 600px;
+
+    /* Center and scale the image nicely */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+.wM_toggle{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .menu,
+    .nav_items {
+        flex-direction: column;
+    }
+    .wM_toggle{
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .nav_items{
+        display: none !important;
+    }
+    .right_nav{
+        margin-left: 0 !important;
+    }
+
+}
+.db{
+    display: block !important;
+}
+.wM{
+    padding-right: 20px;
+
+}
+.nav_items{
+    display: flex;
+}
+.right_nav{
+    margin-left: auto;
+}

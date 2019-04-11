@@ -114,7 +114,7 @@ app.get('*', function (req, res, next) {
         _react2.default.createElement(_App2.default, null)
     ));
 
-    res.status(200).send("<html><!DOCTYPE html><head>\n        <title>SSR with RR</title>\n  <script src=\"/bundle.js\" defer></script>\n      </head><body><div id=\"root\">" + markup + "</div></body></html>");
+    res.status(200).send("<html><!DOCTYPE html><head>\n        <title>SSR with RR</title>\n  <script src=\"/bundle.js\" defer></script>\n  <link href=\"/main.css\" rel=\"stylesheet\">\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css\" rel=\"stylesheet\">\n\n      </head><body><div id=\"root\">" + markup + "</div></body></html>");
 });
 app.listen(3000, function () {
     console.log('Server running');
@@ -163,7 +163,7 @@ var _routes2 = _interopRequireDefault(_routes);
 
 var _reactRouterDom = __webpack_require__(1);
 
-var _My404component = __webpack_require__(10);
+var _My404component = __webpack_require__(11);
 
 var _My404component2 = _interopRequireDefault(_My404component);
 
@@ -232,7 +232,7 @@ var _Home = __webpack_require__(8);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Grid = __webpack_require__(9);
+var _Grid = __webpack_require__(10);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
@@ -269,6 +269,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(1);
 
+var _Menu = __webpack_require__(9);
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -292,12 +296,7 @@ var Home = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                'Hi Home',
-                _react2.default.createElement(
-                    _reactRouterDom.Link,
-                    { to: '/routing/javascript' },
-                    'Grid'
-                )
+                _react2.default.createElement(_Menu2.default, null)
             );
         }
     }]);
@@ -309,6 +308,115 @@ exports.default = Home;
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Menu = function (_Component) {
+    _inherits(Menu, _Component);
+
+    function Menu(props) {
+        _classCallCheck(this, Menu);
+
+        return _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
+    }
+
+    _createClass(Menu, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var id = document.getElementById("ham_button");
+            id.onclick = function () {
+                var navs = document.querySelectorAll('.nav_items');
+                navs.forEach(function (nav) {
+                    nav.classList.toggle('db');
+                });
+            };
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'bg-img' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'menu' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'wM' },
+                        'Vashisht'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'wM wM_toggle', id: 'ham_button' },
+                        _react2.default.createElement('i', { className: 'fas fa-bars' })
+                    ),
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'nav_items' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'wM' },
+                            'Home'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'wM' },
+                            'About'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'wM' },
+                            'Tools'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'nav_items right_nav' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'wM' },
+                            'Experience'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'wM' },
+                            'Contact me'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Menu;
+}(_react.Component);
+
+exports.default = Menu;
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -359,7 +467,7 @@ var Grid = function (_Component) {
 exports.default = Grid;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -374,6 +482,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _Menu = __webpack_require__(9);
+
+var _Menu2 = _interopRequireDefault(_Menu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -398,7 +510,8 @@ var My404component = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                'Kuch ni mila bc'
+                _react2.default.createElement(_Menu2.default, null),
+                'Sorry nothing here :/'
             );
         }
     }]);
