@@ -4,7 +4,7 @@ import { renderToString } from "react-dom/server"
 import React from 'react'
 import App from '../all/App';
 import { StaticRouter } from "react-router-dom";
-
+const port = process.env.PORT || 8080
 
 
 const app = express();
@@ -25,6 +25,6 @@ app.get('*',(req,res,next)=>{
 
       </head><body><div id="root">${markup}</div></body></html>`);
 })
-app.listen(3000,function (){
+app.listen(port,function (){
     console.log('Server running');
 })
