@@ -189,20 +189,23 @@
         margin-right: auto;
         text-align: center;
     }
+
+}
+
+.vh{
+    visibility: hidden;
+}
+@media only screen and (min-width : 700px) {
     .languages{
         font-family: "Maison Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
         text-align: center;
         margin-top: 10px;
+        width: 250px !important;
     }
 
 }
-.vh{
-    visibility: hidden;
-}
-
 .languages{
     font-family: "Maison Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
     text-align: center;
     margin-top: 10px;
-    width: 250px !important;
 }
