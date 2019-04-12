@@ -18,9 +18,10 @@ class Main extends Component{
     }
 
     render(){
+
         return(
             <div className="main flx ff">
-                <div className="static mt200 ma w100">
+                <div className="static mt200 ma w80">
                    <div className="fww fs28">
                     HI THERE. LOOKING FOR A WEB DEVELOPER?
                    </div>
@@ -28,7 +29,7 @@ class Main extends Component{
                     I'M A WEB DEVELOPER BASED IN NOIDA,UTTAR PRADESH
                    </div>
                    <div className="fww mt10 fs22">
-                    I BUILD WEB APPLICATIONS USING JAVASCRIPT(React.JS & Node.JS)
+                    I BUILD WEB APPLICATIONS USING JAVASCRIPT
                    </div>
                 </div>
             </div>

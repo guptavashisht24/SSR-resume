@@ -11,11 +11,19 @@
 }
 .flx{
     display: flex;
+    flex-wrap: wrap;
+
 }
 .centered{
     top: 50%;
     left: 50%;
     position: absolute;
+}
+.bgr{
+    color : #63d488;
+}
+.border{
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
 }
 .main{
     min-height: 400px;
@@ -76,8 +84,11 @@
     margin-right: auto;
     background-color: aqua;
 }
-.w100{
+.w80{
     width: 80%;
+}
+.w100{
+    width: 100%;
 }
 .fww{
     font-weight: 100;
@@ -108,4 +119,80 @@
 }
 .dib{
     display: inline-block;
+}
+.bg{
+    color: #c9c9c9;
+}
+.w70{
+    width: 70%;
+}
+.fs24{
+    font-size: 24px;
+}
+.m50{
+    margin: 50px 50px;
+}
+.fws{
+    font-weight: 300;
+}
+.ml20{
+    margin-left: 10%;
+}
+.w50{
+    width: 50%;
+}
+.cl{
+    line-height: 1.5em;
+}
+.pl10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pt5{
+    padding-top: 5px;
+}
+.pl20{
+    padding-left: 20px;
+}
+.fs20{
+    font-size: 20px;
+}
+.tc{
+    text-align: center;
+}
+.w30{
+    width: 30%;
+}
+.pl20{
+    padding: 20px;
+}
+.ml10{
+    margin-left: 10%;
+}
+.images{
+    width: 25%;
+    margin-left: 5%;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 945px) {
+    .images{
+        width: 40%;
+        margin-left: 7%;
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .images{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+.vh{
+    visibility: hidden;
+}
+.w250{
+    width: 250px;
 }
