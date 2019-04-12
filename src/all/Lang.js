@@ -16,10 +16,10 @@ class Lang extends Component{
     }
 
     render(){
-        let className = "ff tc vh mt10 w250";
+        let className = "languages vh";
         let className_img = ''
         if(this.state.hover) {
-            className = "ff tc mt10 w250";
+            className = "languages";
             className_img = 'border'
         }
         return(

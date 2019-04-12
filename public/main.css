@@ -189,10 +189,15 @@
         margin-right: auto;
         text-align: center;
     }
+
 }
 .vh{
     visibility: hidden;
 }
-.w250{
-    width: 250px;
+
+.languages{
+    font-family: "Maison Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    width: 250px !important;
 }
