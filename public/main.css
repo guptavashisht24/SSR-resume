@@ -23,7 +23,7 @@
     color : #63d488;
 }
 .border{
-    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+    box-shadow: 0 0 6px #63d488;
 }
 .main{
     min-height: 400px;
@@ -231,7 +231,7 @@
     display: table;
 }
 .bshadow{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    box-shadow: 0 2px 4px 0 #c9c9c9!important;
     border-radius: 1%;
     box-sizing: border-box;
 }
@@ -257,4 +257,16 @@
     .content{
         width: 40%;
     }
+}
+.fw{
+    color: white !important;
+}
+.fg{
+    color: #63d488;
+}
+.fWg{
+    font-weight: 700;
+}
+.bgg{
+    background-color: #262626;
 }

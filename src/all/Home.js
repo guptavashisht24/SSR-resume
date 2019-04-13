@@ -4,6 +4,7 @@ import Menu from './Menu';
 import Main from './Main';
 import Tools from './Tools';
 import Experience from './Experience';
+import Footer from './Footer';
 
 class Home extends Component{
     constructor(props){
@@ -16,6 +17,7 @@ class Home extends Component{
                 <Main />
                 <Tools />
                 <Experience/>
+                <Footer/>
             </div>
         )
     }

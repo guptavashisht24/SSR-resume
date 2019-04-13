@@ -6,7 +6,7 @@ class Card extends Component{
     }
     render(){
         return(
-            <div>
+            <div className="fg">
             <div className="w100 flx bshadow p20">
                 <div className="logo ml10">
                     <img src="im.jpg" height="250px" width="250px"></img>
@@ -21,14 +21,14 @@ class Card extends Component{
                             <em><b>July’18 - Present</b></em>
                         </div>
                     </div>
-                    <ul className="ff">
-                        <i><li>Developed new features on, and Mantained Company Module of IndiaMART’s mobile website.</li>
+                    <ul className="ff fWg">
+                        <li>Developed new features on, and Mantained Company Module of IndiaMART’s mobile website.</li>
                         <li>Optimized the code and employed best coding strategies to provide the best user experience by sequencing the loading
                             of external Javascript files according to user requirement before or after page load, thereby acheiving a near perfect
                             page speed insights score of 99 for company module.</li>
                         <li>Implemented Voice Search across mobile website and mantained PWA modules.</li>
                         <li>Migrated IndiaMART’s home page from PHP to Javascript(PWA) using React-Redux and NodeJS in order to provide a
-                            better user experience</li></i>
+                            better user experience</li>
                     </ul>
                 </div>
             </div>
@@ -43,8 +43,8 @@ class Card extends Component{
                             <em><b>June’17 - June'18</b></em>
                         </div>
                     </div>
-                    <ul className="ff">
-                        <i><li>Developed new features on, and looked after Login/Identification, Manage buy requirement, profile and Home modules
+                    <ul className="ff fWg">
+                        <li>Developed new features on, and looked after Login/Identification, Manage buy requirement, profile and Home modules
                             of IndiaMART mobile website, using Javascript and PHP.</li>
                             <li>Implemented and Mantained personalization widgets across modules on mobile website, using Javascript and PHP.</li>
                             <li>Restructured the entire code base of home module of mobile website for better code modularity, readability and easy
@@ -53,7 +53,7 @@ class Card extends Component{
                                 to Progressive Web App(PWA) by re-implementing features of search module in ReactJS, Node JS, and Redux. The
                                 features were earlier developed in PHP and Javascript</li>
                             <li>Maintained Seller modules on PWA(ReactJS and NodeJS) portion of mobile website</li>
-                        </i>
+
                     </ul>
                 </div>
                 <div className="logo ml10">
@@ -74,10 +74,10 @@ class Card extends Component{
                                 <em><b>June’16 - July'16</b></em>
                             </div>
                         </div>
-                        <ul className="ff">
-                            <i><li>Developed a web based E-commerce Application,using Django Framework, and Python, with a fully functional Catalog
+                        <ul className="ff fWg">
+                            <li>Developed a web based E-commerce Application,using Django Framework, and Python, with a fully functional Catalog
                                 and Cart, which recommends products(Product page recommendations and Home page recommendations) to the users
-                                based on the statistics of the products, and performed functional testing on the application</li></i>
+                                based on the statistics of the products, and performed functional testing on the application</li>
                         </ul>
                     </div>
                 </div>

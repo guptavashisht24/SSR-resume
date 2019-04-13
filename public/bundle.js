@@ -12834,6 +12834,10 @@ var _Experience = __webpack_require__(67);
 
 var _Experience2 = _interopRequireDefault(_Experience);
 
+var _Footer = __webpack_require__(71);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12860,7 +12864,8 @@ var Home = function (_Component) {
                 _react2.default.createElement(_Menu2.default, null),
                 _react2.default.createElement(_Main2.default, null),
                 _react2.default.createElement(_Tools2.default, null),
-                _react2.default.createElement(_Experience2.default, null)
+                _react2.default.createElement(_Experience2.default, null),
+                _react2.default.createElement(_Footer2.default, null)
             );
         }
     }]);
@@ -15692,7 +15697,7 @@ var Card = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                null,
+                { className: "fg" },
                 _react2.default.createElement(
                     "div",
                     { className: "w100 flx bshadow p20" },
@@ -15745,30 +15750,26 @@ var Card = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "ul",
-                            { className: "ff" },
+                            { className: "ff fWg" },
                             _react2.default.createElement(
-                                "i",
+                                "li",
                                 null,
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Developed new features on, and Mantained Company Module of IndiaMART\u2019s mobile website."
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Optimized the code and employed best coding strategies to provide the best user experience by sequencing the loading of external Javascript files according to user requirement before or after page load, thereby acheiving a near perfect page speed insights score of 99 for company module."
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Implemented Voice Search across mobile website and mantained PWA modules."
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Migrated IndiaMART\u2019s home page from PHP to Javascript(PWA) using React-Redux and NodeJS in order to provide a better user experience"
-                                )
+                                "Developed new features on, and Mantained Company Module of IndiaMART\u2019s mobile website."
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Optimized the code and employed best coding strategies to provide the best user experience by sequencing the loading of external Javascript files according to user requirement before or after page load, thereby acheiving a near perfect page speed insights score of 99 for company module."
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Implemented Voice Search across mobile website and mantained PWA modules."
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Migrated IndiaMART\u2019s home page from PHP to Javascript(PWA) using React-Redux and NodeJS in order to provide a better user experience"
                             )
                         )
                     )
@@ -15820,35 +15821,31 @@ var Card = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "ul",
-                            { className: "ff" },
+                            { className: "ff fWg" },
                             _react2.default.createElement(
-                                "i",
+                                "li",
                                 null,
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Developed new features on, and looked after Login/Identification, Manage buy requirement, profile and Home modules of IndiaMART mobile website, using Javascript and PHP."
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Implemented and Mantained personalization widgets across modules on mobile website, using Javascript and PHP."
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Restructured the entire code base of home module of mobile website for better code modularity, readability and easy mantainence."
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Played a vital role in migrating search module of mobile website from a standard server side rendered web application to Progressive Web App(PWA) by re-implementing features of search module in ReactJS, Node JS, and Redux. The features were earlier developed in PHP and Javascript"
-                                ),
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Maintained Seller modules on PWA(ReactJS and NodeJS) portion of mobile website"
-                                )
+                                "Developed new features on, and looked after Login/Identification, Manage buy requirement, profile and Home modules of IndiaMART mobile website, using Javascript and PHP."
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Implemented and Mantained personalization widgets across modules on mobile website, using Javascript and PHP."
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Restructured the entire code base of home module of mobile website for better code modularity, readability and easy mantainence."
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Played a vital role in migrating search module of mobile website from a standard server side rendered web application to Progressive Web App(PWA) by re-implementing features of search module in ReactJS, Node JS, and Redux. The features were earlier developed in PHP and Javascript"
+                            ),
+                            _react2.default.createElement(
+                                "li",
+                                null,
+                                "Maintained Seller modules on PWA(ReactJS and NodeJS) portion of mobile website"
                             )
                         )
                     ),
@@ -15910,15 +15907,11 @@ var Card = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "ul",
-                            { className: "ff" },
+                            { className: "ff fWg" },
                             _react2.default.createElement(
-                                "i",
+                                "li",
                                 null,
-                                _react2.default.createElement(
-                                    "li",
-                                    null,
-                                    "Developed a web based E-commerce Application,using Django Framework, and Python, with a fully functional Catalog and Cart, which recommends products(Product page recommendations and Home page recommendations) to the users based on the statistics of the products, and performed functional testing on the application"
-                                )
+                                "Developed a web based E-commerce Application,using Django Framework, and Python, with a fully functional Catalog and Cart, which recommends products(Product page recommendations and Home page recommendations) to the users based on the statistics of the products, and performed functional testing on the application"
                             )
                         )
                     )
@@ -16037,6 +16030,79 @@ var My404component = function (_Component) {
 }(_react.Component);
 
 exports.default = My404component;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Card = __webpack_require__(68);
+
+var _Card2 = _interopRequireDefault(_Card);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_Component) {
+    _inherits(Footer, _Component);
+
+    function Footer(props) {
+        _classCallCheck(this, Footer);
+
+        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+    }
+
+    _createClass(Footer, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'flx bgg ff mt20' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'w100 mt20 fs28 bg ml20' },
+                    'Vashisht Gupta'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'w100 fs22 bgr ml20' },
+                    'guptavashisht24@gmail.com'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'w100 mt20 fs20 bg ml20' },
+                    'Let\'s build the next big product together!'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'Links' },
+                    _react2.default.createElement('i', { className: 'fa fa-linkedin-square' })
+                )
+            );
+        }
+    }]);
+
+    return Footer;
+}(_react.Component);
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
