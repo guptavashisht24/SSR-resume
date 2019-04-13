@@ -218,7 +218,7 @@ app.get('*', function (req, res, next) {
         _react2.default.createElement(_App2.default, null)
     ));
 
-    res.status(200).send("<html><!DOCTYPE html><head>\n        <title>Vashisht</title>\n  <script src=\"/bundle.js\" defer></script>\n  <link href=\"/main.css\" rel=\"stylesheet\">\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css\" rel=\"stylesheet\">\n\n      </head><body><div id=\"root\">" + markup + "</div></body></html>");
+    res.status(200).send("<html><!DOCTYPE html><head>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <title>Vashisht Gupta</title>\n        <meta name=\"description\" content=\"Vashisht Gupta - Web Developer. Let's build Kickass experiences on the web!\">\n  <script src=\"/bundle.js\" defer></script>\n  <link href=\"/main.css\" rel=\"stylesheet\">\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css\" rel=\"stylesheet\">\n\n      </head><body><div id=\"root\">" + markup + "</div></body></html>");
 });
 app.listen(port, function () {
     console.log('Server running');
@@ -267,7 +267,7 @@ var _routes2 = _interopRequireDefault(_routes);
 
 var _reactRouterDom = __webpack_require__(1);
 
-var _My404component = __webpack_require__(12);
+var _My404component = __webpack_require__(15);
 
 var _My404component2 = _interopRequireDefault(_My404component);
 
@@ -336,7 +336,7 @@ var _Home = __webpack_require__(9);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Grid = __webpack_require__(11);
+var _Grid = __webpack_require__(14);
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
@@ -381,9 +381,13 @@ var _Main = __webpack_require__(10);
 
 var _Main2 = _interopRequireDefault(_Main);
 
-var _Tools = __webpack_require__(13);
+var _Tools = __webpack_require__(11);
 
 var _Tools2 = _interopRequireDefault(_Tools);
+
+var _Experience = __webpack_require__(13);
+
+var _Experience2 = _interopRequireDefault(_Experience);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -410,7 +414,8 @@ var Home = function (_Component) {
                 null,
                 _react2.default.createElement(_Menu2.default, null),
                 _react2.default.createElement(_Main2.default, null),
-                _react2.default.createElement(_Tools2.default, null)
+                _react2.default.createElement(_Tools2.default, null),
+                _react2.default.createElement(_Experience2.default, null)
             );
         }
     }]);
@@ -519,115 +524,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Grid = function (_Component) {
-    _inherits(Grid, _Component);
-
-    function Grid(props) {
-        _classCallCheck(this, Grid);
-
-        return _possibleConstructorReturn(this, (Grid.__proto__ || Object.getPrototypeOf(Grid)).call(this, props));
-    }
-
-    _createClass(Grid, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                'Hi ',
-                this.props.match.params.id
-            );
-        }
-    }]);
-
-    return Grid;
-}(_react.Component);
-
-exports.default = Grid;
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Menu = __webpack_require__(2);
-
-var _Menu2 = _interopRequireDefault(_Menu);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var My404component = function (_Component) {
-    _inherits(My404component, _Component);
-
-    function My404component(props) {
-        _classCallCheck(this, My404component);
-
-        return _possibleConstructorReturn(this, (My404component.__proto__ || Object.getPrototypeOf(My404component)).call(this, props));
-    }
-
-    _createClass(My404component, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(_Menu2.default, null),
-                'Sorry nothing here :/'
-            );
-        }
-    }]);
-
-    return My404component;
-}(_react.Component);
-
-exports.default = My404component;
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
 var _reactRouterDom = __webpack_require__(1);
 
-var _Lang = __webpack_require__(14);
+var _Lang = __webpack_require__(12);
 
 var _Lang2 = _interopRequireDefault(_Lang);
 
@@ -692,7 +591,7 @@ var Tools = function (_Component) {
 exports.default = Tools;
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -743,10 +642,10 @@ var Lang = function (_Component) {
         value: function render() {
             var _this2 = this;
 
-            var className = "ff tc vh mt10 w250";
+            var className = "languages vh";
             var className_img = '';
             if (this.state.hover) {
-                className = "ff tc mt10 w250";
+                className = "languages";
                 className_img = 'border';
             }
             return _react2.default.createElement(
@@ -770,6 +669,450 @@ var Lang = function (_Component) {
 }(_react.Component);
 
 exports.default = Lang;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Card = __webpack_require__(16);
+
+var _Card2 = _interopRequireDefault(_Card);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Experience = function (_Component) {
+    _inherits(Experience, _Component);
+
+    function Experience(props) {
+        _classCallCheck(this, Experience);
+
+        return _possibleConstructorReturn(this, (Experience.__proto__ || Object.getPrototypeOf(Experience)).call(this, props));
+    }
+
+    _createClass(Experience, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'flx' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'w100 tc ff m50 fs22' },
+                    'Professional Experience'
+                ),
+                _react2.default.createElement(_Card2.default, null)
+            );
+        }
+    }]);
+
+    return Experience;
+}(_react.Component);
+
+exports.default = Experience;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Grid = function (_Component) {
+    _inherits(Grid, _Component);
+
+    function Grid(props) {
+        _classCallCheck(this, Grid);
+
+        return _possibleConstructorReturn(this, (Grid.__proto__ || Object.getPrototypeOf(Grid)).call(this, props));
+    }
+
+    _createClass(Grid, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                'Hi ',
+                this.props.match.params.id
+            );
+        }
+    }]);
+
+    return Grid;
+}(_react.Component);
+
+exports.default = Grid;
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Menu = __webpack_require__(2);
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var My404component = function (_Component) {
+    _inherits(My404component, _Component);
+
+    function My404component(props) {
+        _classCallCheck(this, My404component);
+
+        return _possibleConstructorReturn(this, (My404component.__proto__ || Object.getPrototypeOf(My404component)).call(this, props));
+    }
+
+    _createClass(My404component, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(_Menu2.default, null),
+                'Sorry nothing here :/'
+            );
+        }
+    }]);
+
+    return My404component;
+}(_react.Component);
+
+exports.default = My404component;
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Card = function (_Component) {
+    _inherits(Card, _Component);
+
+    function Card(props) {
+        _classCallCheck(this, Card);
+
+        return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
+    }
+
+    _createClass(Card, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "div",
+                    { className: "w100 flx bshadow p20" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "logo ml10" },
+                        _react2.default.createElement("img", { src: "im.jpg", height: "250px", width: "250px" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "content mr10" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "crx head ff fs16" },
+                            _react2.default.createElement(
+                                "b",
+                                null,
+                                "IndiaMART InterMESH Limited"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "crx head ff fs16" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "fl" },
+                                _react2.default.createElement(
+                                    "em",
+                                    null,
+                                    _react2.default.createElement(
+                                        "b",
+                                        null,
+                                        "Software Programmer"
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "fr" },
+                                _react2.default.createElement(
+                                    "em",
+                                    null,
+                                    _react2.default.createElement(
+                                        "b",
+                                        null,
+                                        "July\u201918 - Present"
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "ul",
+                            { className: "ff" },
+                            _react2.default.createElement(
+                                "i",
+                                null,
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Developed new features on, and Mantained Company Module of IndiaMART\u2019s mobile website."
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Optimized the code and employed best coding strategies to provide the best user experience by sequencing the loading of external Javascript files according to user requirement before or after page load, thereby acheiving a near perfect page speed insights score of 99 for company module."
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Implemented Voice Search across mobile website and mantained PWA modules."
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Migrated IndiaMART\u2019s home page from PHP to Javascript(PWA) using React-Redux and NodeJS in order to provide a better user experience"
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "w100 flx bshadow p20 mt10" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "content mr10" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "crx head ff fs16" },
+                            _react2.default.createElement(
+                                "b",
+                                null,
+                                "IndiaMART InterMESH Limited"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "crx head ff fs16" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "fl" },
+                                _react2.default.createElement(
+                                    "em",
+                                    null,
+                                    _react2.default.createElement(
+                                        "b",
+                                        null,
+                                        "Associate Software Programmer"
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "fr" },
+                                _react2.default.createElement(
+                                    "em",
+                                    null,
+                                    _react2.default.createElement(
+                                        "b",
+                                        null,
+                                        "June\u201917 - June'18"
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "ul",
+                            { className: "ff" },
+                            _react2.default.createElement(
+                                "i",
+                                null,
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Developed new features on, and looked after Login/Identification, Manage buy requirement, profile and Home modules of IndiaMART mobile website, using Javascript and PHP."
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Implemented and Mantained personalization widgets across modules on mobile website, using Javascript and PHP."
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Restructured the entire code base of home module of mobile website for better code modularity, readability and easy mantainence."
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Played a vital role in migrating search module of mobile website from a standard server side rendered web application to Progressive Web App(PWA) by re-implementing features of search module in ReactJS, Node JS, and Redux. The features were earlier developed in PHP and Javascript"
+                                ),
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Maintained Seller modules on PWA(ReactJS and NodeJS) portion of mobile website"
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "logo ml10" },
+                        _react2.default.createElement("img", { src: "im.jpg", height: "250px", width: "250px" })
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "w100 flx bshadow p20 mt10" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "logo ml10" },
+                        _react2.default.createElement("img", { src: "tcs.png", height: "250px", width: "250px" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "content mr10" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "crx head ff fs16" },
+                            _react2.default.createElement(
+                                "b",
+                                null,
+                                "Tata Consultancy Services"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "crx head ff fs16" },
+                            _react2.default.createElement(
+                                "div",
+                                { className: "fl" },
+                                _react2.default.createElement(
+                                    "em",
+                                    null,
+                                    _react2.default.createElement(
+                                        "b",
+                                        null,
+                                        "Remote Intern"
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "fr" },
+                                _react2.default.createElement(
+                                    "em",
+                                    null,
+                                    _react2.default.createElement(
+                                        "b",
+                                        null,
+                                        "June\u201916 - July'16"
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "ul",
+                            { className: "ff" },
+                            _react2.default.createElement(
+                                "i",
+                                null,
+                                _react2.default.createElement(
+                                    "li",
+                                    null,
+                                    "Developed a web based E-commerce Application,using Django Framework, and Python, with a fully functional Catalog and Cart, which recommends products(Product page recommendations and Home page recommendations) to the users based on the statistics of the products, and performed functional testing on the application"
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Card;
+}(_react.Component);
+
+exports.default = Card;
 
 /***/ })
 /******/ ]);

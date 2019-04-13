@@ -19,7 +19,8 @@ app.get('*',(req,res,next)=>{
 
     res.status(200).send(`<html><!DOCTYPE html><head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vashisht</title>
+        <title>Vashisht Gupta</title>
+        <meta name="description" content="Vashisht Gupta - Web Developer. Let's build Kickass experiences on the web!">
   <script src="/bundle.js" defer></script>
   <link href="/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css" rel="stylesheet">

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Menu from './Menu';
 import Main from './Main';
 import Tools from './Tools';
+import Experience from './Experience';
 
 class Home extends Component{
     constructor(props){
@@ -14,6 +15,7 @@ class Home extends Component{
                 <Menu />
                 <Main />
                 <Tools />
+                <Experience/>
             </div>
         )
     }

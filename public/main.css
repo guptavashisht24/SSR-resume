@@ -209,3 +209,52 @@
     text-align: center;
     margin-top: 10px;
 }
+
+.w40{
+    width: 40%;
+}
+.mr10{
+    margin-right: 10%;
+}
+.fs16{
+    font-size: 16px;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.crx::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.bshadow{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    border-radius: 1%;
+
+}
+.blg{
+    background-color: lightgrey;
+}
+.p20{
+    padding: 20px;
+}
+.logo{
+    width: 0%;
+    display: none;
+}
+.content{
+    width: 100%;
+}
+
+@media only screen and (min-width: 1055px) {
+    .logo{
+        width: 40%;
+        display: block;
+    }
+    .content{
+        width: 40%;
+    }
+}
